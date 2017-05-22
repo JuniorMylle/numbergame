@@ -34,3 +34,5 @@ var wholeForm = document.querySelector(".form");
   wholeForm.style.opacity = 0.5;
   guessField.setAttribute("disabled", "disabled");
   guessSubmit.setAttribute("disabled", "disabled");
+}
+guessSubmit.onclick = checkGuess;
