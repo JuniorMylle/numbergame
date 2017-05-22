@@ -1,4 +1,4 @@
- var randomNumber = Math.floor(Math.random() * 100) + 1;
+ var randomNumber = Math.floor(Math.random() * 1000) + 1;
 var guesses = document.getElementById("guesses");
 var lastResult = document.getElementById("lastResult");
 var lowOrHi = document.getElementById("lowOrHi");
@@ -8,7 +8,7 @@ var guessCount = 1;
 function checkGuess() {
   var userGuess = Number(guessField.value);
   guesses.innerHTML += userGuess + " ";
-  if(guessCount == 10) {
+  if(guessCount == 15) {
     lastResult.innerHTML = "!!!GAME OVER!!!";
     disableForm();
   } else {
